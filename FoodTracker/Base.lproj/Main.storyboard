@@ -15,7 +15,7 @@
         <scene sceneID="zYM-Gk-sGA">
             <objects>
                 <tableViewController id="ORe-XP-hb2" customClass="MealTableViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Xf-Un-Yy7" customClass="Meal">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Xf-Un-Yy7" customClass="Meal">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,6 +48,7 @@
                                     <outlet property="nameLabel" destination="NU2-6A-t6U" id="a6p-vt-NfZ"/>
                                     <outlet property="photoImageView" destination="FUb-Cc-Ux6" id="edd-gB-sEl"/>
                                     <outlet property="ratingControl" destination="MQr-Ca-XZT" id="rYK-yz-h0S"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="1Gv-OU-0BW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -175,10 +176,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYo-ZA-3LE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1153" y="618"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="320" height="320"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1Gv-OU-0BW"/>
+    </inferredMetricsTieBreakers>
 </document>
